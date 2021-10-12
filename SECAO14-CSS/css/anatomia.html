@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .seletor{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px;
+            /*multiplos valores*/
+            border: 3px solid navy; /*possivel inserir varios valores dentro de uma propriedade*/
+            font-family:'Times New Roman', Times, serif;
+            /*Funções*/
+            width: calc(100% - 40px);
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+
+        /*Usando uma pseudo-classe hover*/
+        .seletor:hover{
+            background-color: orangered;
+        }
+        
+        /*Usando um pseudo-elemento. Seleciona a primeira letra*/
+        .seletor::first-letter{
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /*padrão de nomenclatura - dash-case ou camelCase*/
+
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
