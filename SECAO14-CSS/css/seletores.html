@@ -6,7 +6,47 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        
+        /* p ~ ol */
+        /*[feira=casa]{}*/
+        /*[feira]{
+            color: #ff0;
+            background-color: aqua;
+        }*/
+
+        section > span:nth-of-type(2){ /*Pega o segundo elemento do tipo span*/
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+        section > :nth-child(odd),ul,p{ /*even seleciona os impares*/
+            color: blueviolet;
+            background-color: blue;
+        }
+        /*
+        span:nth-child(1){
+            color: blueviolet;
+            background-color: blue;
+        }
+
+
+
+
+       /* p ~ ol{
+            color: #ff0;
+            background-color: #f77;
+        }
+        
+        #aninhado section{ /*Acessa direto a tag dentro do id*/
+         /*   color: #ff0;
+            background-color: #f77;
+
+        }
+
+        /*#aninhado > div{ /*Acessa direto a tag dentro do id*/
+        /*    color: #ff0;
+            background-color: #f77;
+
+        }*/
     </style>
 </head>
 
@@ -29,7 +69,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
