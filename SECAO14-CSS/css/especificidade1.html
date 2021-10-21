@@ -6,6 +6,29 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        /*Em linhas gerais...
+        
+            1. regra com !important
+            2. seletores mais específicos
+            3. última regra processada (empate)
+        
+        */
+        p{
+            background-color: #aaa;
+        }
+
+        .observacao{
+            background-color: blueviolet;
+            border: 5px solid;
+            padding: 200px!important; /*Sobreescreve mesmo com uma especifidade de nível maior*/
+            font-size: 40px;
+        }
+
+        p.observacao{ /*classe associada com um parágrafo(p) --- Nível de especifidade é maior*/
+            padding:  2px;  /*Sobreescreve o .observacao*/
+            background: linear-gradient(to right,red,yellow);
+        }
     </style>
 </head>
 

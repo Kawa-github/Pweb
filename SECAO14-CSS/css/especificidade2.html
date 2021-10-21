@@ -6,11 +6,41 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+
+        /*
+            1. Inline
+            2. ID
+            3. Classe, pseudo-classe, atributo
+            4. Elemento, pseudo-elemento
+        */
+
+        body{
+            font-size: 40px;
+        }
+
+        div{
+            background-color: blue;
+            color: #ffff; /*baixa*/
+        }
+
+        div[wm-cor]{
+            background-color: darkgoldenrod; /*Maior nível de especifidade*/
+        }
+        div.estilo{
+            background-color: green;
+        }
+        div:hover{
+            background-color: purple;
+        }
+
+        #unico1, #unico2{ /*ID tem um nível maior que classe*/
+            background-color: black;
+        }
     </style>
 </head>
 
 <body>
-    <div id="unico1" class="estilo">
+    <div id="unico1" class="estilo" style="background-color: red">
         #unico1 vs .estilo vs inline
     </div>
     <div id="unico2" class="estilo">#unico2 vs .estilo</div>
