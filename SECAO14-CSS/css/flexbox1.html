@@ -6,7 +6,50 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .big{
+            font-size: 1.5em;
+        }
+
+        .flex-container{
+            display: flex; 
+            flex-direction: column;/*por padrao a flex-direction é row*/
+            flex-direction: column-reverse;/*coloca o display em coluna, porém com a escrita reversa*/
+            flex-direction: row-reverse;/* linha reversa*/
+            flex-direction: row;/* display em linha*/
+            width: 50%; /*largura do container*/
+            flex-wrap: wrap; /*quebra a linha dentro do container*/
+            flex-wrap: wrap-reverse; /*quebra linha e reverte os conteudos*/
+            flex-flow: row wrap;
+            height: 200px;
+            flex-flow: column-reverse wrap; /*quebra a linha e coluna ao contrario*/
+            flex-flow: row wrap;
+
+            justify-content: flex-start; /*RIGHT*/ /*justifica o conteudo, tipo float:right,left;*/
+            justify-content: flex-end;/*LEFT*/
+            justify-content: center; /*center*/
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+
+            /*Cross Axis*/ /*align-items- aplicada somente para flex-items*/
+            height: 400px;
+            align-items: stretch; /*por padrao é strecth, ou seja, vai esticar a linha  */
+            align-items: baseline; /*alinha pela basee*/
+            align-items: flex-start; /*alinha pelo começo*/
+            align-items: flex-end; /*alinha pelo final*/
+            align-items: center; /*centraliza os elementos*/
+        
+        
+            /*para mais de uma linha*/ /*Aplicada somente para flex-container*/
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around; 
+            align-content: space-between;
+        }
+
+
     </style>
 </head>
 

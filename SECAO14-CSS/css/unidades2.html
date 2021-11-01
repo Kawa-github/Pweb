@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <title>Unidades #02</title>
     <style>
-        /* ... */
+        .fora{
+            position:relative;
+            background-color: orange;
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+        }
+
+        .dentro{
+            background-color: mediumorchid;
+            height: 100px;
+            width: 100%;
+            position:static; /*Ocupa apenas o espaço do conteudo*/
+            position: relative; /*Ocupa apenas o espaço do conteudo*/
+            position: absolute; /*Ocupa o conteudo + padding*/
+            position: fixed;
+        }
+
+        /*Div por padrão é display block
+        E ocupa 100% de largura.
+        */
     </style>
 </head>
 <body>
