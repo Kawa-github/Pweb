@@ -14,3 +14,7 @@ console.log(a,b)
 const c = 5
 // c = 50
 console.log(c)
+
+const number = 6 //gerar erro, pois em const não é possivel redeclarar a variavel, e reatribuir 
+const number = 12
+console.log(number)
