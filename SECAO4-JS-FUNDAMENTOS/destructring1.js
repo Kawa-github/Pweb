@@ -14,10 +14,10 @@ const pessoa = {
 const { nome,idade } = pessoa //removendo o atributo nome e idade do objeto pessoa 
 console.log(nome,idade)
 
-const {nome: n, idade: i} = pessoa //renomeando o nome da variavel
+const {nome: n, idade: i} = pessoa //renomeando o nome da variavel e exibindo
 console.log(n, i)
 
-const {sobrenome, bemHumorada = true} = pessoa
+const {sobrenome, bemHumorada = true} = pessoa //acessando atributo que não existe
 console.log(sobrenome, bemHumorada)
 
 const {endereco: { logradouro,numero,cep } } = pessoa
