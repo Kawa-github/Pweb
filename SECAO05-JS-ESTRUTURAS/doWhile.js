@@ -4,7 +4,7 @@ function getInteiroAleatorioEntre(min,max){
 }
 
 
-mk m mlet opcao = -1 
+let opcao = -1 
 // let opcao //nao é necessario atribuir um valor para opcao. Fazendo isso, garante que a estrutura vá rodar pelo menos uma vez.
 // tambem não é necessário criar a variavel, pois é declarada de forma dinamica
 
