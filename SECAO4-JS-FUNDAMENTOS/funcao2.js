@@ -35,6 +35,11 @@ const add = (a) =>{
 }
 console.log(add(41))
 
+
+const soma2 = (a) => a + 1
+console.log(soma2(12))
+
+
 const segundos = (a) =>{
     return a * 60;
 }
