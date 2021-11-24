@@ -1,0 +1,32 @@
+<!doctype html> <!-- salvar como novoPet.html -->
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>SGP - Cadastro de Pet</title>
+	</head>
+
+
+	<body>
+		<h1>Sistema de Gerenciamento de Pets</h1>
+		<hr>
+		<h2>Cadastro de Pet</h2>
+		
+		<form action="incluirPet.php" method="get">
+			Nome:
+			<input 	type="text" 
+					name="nome" 
+					maxlength="5"
+					size="30"
+					placeholder="Informe o nome do PET">
+			<br>
+			Sexo:
+			<input type="radio" value="M" name="sexo"> Masculino
+			<input type="radio" value="F" name="sexo" checked> Feminino
+			<hr>
+
+		</form>
+		
+	</body>
+
+</html>

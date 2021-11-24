@@ -1,0 +1,43 @@
+create database sistema2;
+
+
+use sistema2;
+
+
+create table clientes (
+	
+nome VARCHAR(30),
+    dataNascimento DATE,
+    
+sexo CHAR(1),
+  
+estadoCivil CHAR(2),
+    
+email VARCHAR(30),
+    
+ddd1 VARCHAR(2),
+    
+telefone1 VARCHAR(11), 
+    tipoTel1 VARCHAR(13),
+  
+ddd2 VARCHAR(2),
+    
+telefone2 VARCHAR(11), 
+    tipoTel2 VARCHAR(13),
+    
+ddd3 VARCHAR(2),
+    
+telefone3 VARCHAR(11), 
+    tipoTel3 VARCHAR(13),
+    observacoes text
+
+);
+
+
+drop table clientes;
+
+describe clientes;
+
+select * from clientes;
+
+/*DELETE FROM clientes WHERE ddd=11;/*

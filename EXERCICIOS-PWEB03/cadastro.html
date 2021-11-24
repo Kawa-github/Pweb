@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body style="border: 1px solid black;">
+    <h1>Cadastro Básico</h1>
+    <form action="gravarCliente.php" method="POST" class="frmCad">
+        <label>Nome:</label>
+            <input type="text" name="nomeCad" size="30" maxlength="20" required>
+        <label>Data de Nascimento:</label>
+            <input type="date" name="dataCad" required>
+        <fieldset>
+            <legend>Sexo</legend>
+                <label for="masc">Masculino</label>
+                    <input type="radio" value="M" name="sexo" id="masc"> 
+                <label for="fem">Feminino</label>
+                    <input type="radio" value="F" name="sexo" id="fem"> 
+			    <br>
+        </fieldset>
+
+        <label>Estado Civil:</label>
+        <select name="estadoCivil">
+            <option selected>Selecione</option>
+            <option value="S">Solteiro</option>
+            <option value="C">Casado</option>
+            <option value="SE">Separado</option>
+            <option value="D">Divorciado</option>
+            <option value="V">Viúvo(a)</option>
+        </select>
+        <br>
+        
+        
+        <h1>Dados para Contato</h1>
+            <label>Email:</label>
+        <input type="email" name="emailCad" size="35" required>
+        Desejo receber email:<input type="checkbox">
+        <br>
+
+        <label>Telefone</label>
+        (<input type="text" name="dddCad1" maxlength="2" size="2" placeholder="xx" required>)
+        <input type="text" name="telefoneCad1" placeholder="xxxx-xxxx / xxxxx-xxxx" maxlength="12" required>
+        
+        <select name="tipoTel1">
+            <option selected>Escolha</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>
+        <br>
+
+        <label>Telefone</label>
+        (<input type="text" name="dddCad2" maxlength="2" size="2" placeholder="xx">)
+        <input type="text" name="telefoneCad2" placeholder="xxxx-xxxx / xxxxx-xxxx" maxlength="12">
+        
+        <select name="tipoTel2">
+            <option selected>Escolha</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>
+        <br>
+
+        <label>Telefone</label>
+        (<input type="text" name="dddCad3" maxlength="2" size="2" placeholder="xx">)
+        <input type="text" name="telefoneCad3" placeholder="xxxx-xxxx / xxxxx-xxxx" maxlength="12">
+        
+        <select name="tipoTel3">
+            <option selected>Escolha</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>
+        <br>
+
+        <label><h1>Observações</h1></label>
+         <textarea name="observacoes" rows="10" cols="50" maxlength="200">Insira suas observações aqui.</textarea>
+        <br>
+        <input type="submit" value="Enviar Dados" style="background-color: red; color: #fff;">
+    </form>
+    <a href=""></a>
+
+</body>
+</html>
